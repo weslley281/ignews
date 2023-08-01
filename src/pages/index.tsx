@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import styles from './home.module.scss';
 import { SubscribeButton } from '@/components/SubscribeButton';
+import { GetServerSideProps } from 'next';
+
 
 export default function Home() {
   return (
@@ -24,4 +26,13 @@ export default function Home() {
       </main>
     </>
   );
+}
+
+
+export const getServerSideProps: GetServerSideProps = async()=>{
+  
+  return{
+    
+  }
+
 }
